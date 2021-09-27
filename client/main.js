@@ -1,12 +1,8 @@
-let radBtn = document.getElementById('radBtn')
+const radBtn = document.getElementById("radBtn")
 
-
-let addCard = (event) => {
-    event.preventDefault()
-    // radBtn.addEventListener('click', console.log("i got clicked"))
-    alert("blah blah blah")
-};
-
-// showVideo = () =>{
-//     document.createElement(section)
-// };
+radBtn.addEventListener("click", ()=>{
+    let section = document.getElementById("container")
+    let newCard = document.createElement("div")
+    let para = document.createElement("p")
+    para.appendChild(newCard)
+})
