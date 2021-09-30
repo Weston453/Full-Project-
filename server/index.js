@@ -29,7 +29,7 @@ app.get('/api/mountain/', (req, res)=>{
 // app.get('/api/mountain/', (req, res)=>{
 //     randomMtn = ()=>{
 //         for(let i=0; i < mountain.length; i++){
-            
+//         return mountain[i]
 //         }
 //     };
 //     res.status(200).send(randomMtn)
