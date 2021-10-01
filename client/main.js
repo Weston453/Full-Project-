@@ -1,4 +1,5 @@
-// Get random mountain facts 
+
+// Get random mountain facts---------------------------------------------
 const radBtn = document.getElementById("radBtn")
 const mountainContainer = document.getElementById("mountainContainer")
 
@@ -12,6 +13,13 @@ radBtn.addEventListener('click', (event)=>{
             mountainContainer.appendChild(mountainElem)
         })
         .catch(err => console.log(err))
-    })
-    
-    
+})
+
+// Add Trail Card--------------------------------------------------------
+const addStoryForm = document.getElementById("addStoryForm")
+const trailName = document.getElementById("trail")
+
+// createTrailCard = (trailsDb) =>{
+//     const trailCard = document.createElement("div")
+//     trailCard.innerHTML = `<img alt='`
+// }
