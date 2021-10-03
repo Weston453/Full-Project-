@@ -17,12 +17,21 @@ body{
 #header{
     background-color: #ffffff;
     color: rgb(88, 88, 88);
-    height:50px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
 } 
+
+h3{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+}
 
 nav{
     background-color:rgba(48, 47, 47, 0.801);
@@ -99,15 +108,22 @@ nav ul {
     border-radius:10px;
 }
 
-#mountainContainer{
-    text-align: center;
+#addStoryForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* #mountainContainer{
+    text-align: center;
+} */
 
 #forcastP{
     text-align: center;
 }
 
-button{
+.normBtn{
     height: 40px;
     width: 170px;
     border-radius: 10px;
@@ -115,16 +131,11 @@ button{
     color: black;
 }
 
-button:hover{
+.normBtn:hover{
     height: 45px;
     width: 175px;
     /* color: grey; */
     font-weight: bold;
-}
-
-input{
-    width: 375px;
-    /* height: 375px; */
 }
 
 #submit{
@@ -141,19 +152,59 @@ img{
 #gear{
     padding: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #items{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:center;
-    width: 100%vw;
+    width: 400px;
+    justify-content: space-between;
     display: flex;
-    /* justify-content: center; */
     background-color:aliceblue;
     padding:20px;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.trailList{
+    background-color: aliceblue;
+    width: 500px;
     border-radius:10px;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+#trail{
+    border: none;
+    appearance: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-weight: 600;
+    width: 250px;
+    text-align: center;
+    outline: none;
+    font-size: 14px;
+}
+
+.skied{
+    color: grey;
+    text-decoration: line-through;
+}
+
+button{
+    height: 20px;
+    width: 20px;
+}
+
+.trailClass{
+    padding: 20px;
 }

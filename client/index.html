@@ -25,21 +25,20 @@
         <div id="card">
         <h3>Welcome!</h3>
         <div id="mountainContainer">The best way to open the door to backcountry skiing is to meet some other backcountry skiers. Seriously.</div><br>
-        <button id="radBtn">Get Fun Ski Facts</button>   
+        <button class="normBtn" id="radBtn">Get Fun Ski Facts</button>   
         </div>
         <br>
         <div id="card">
             <form id="addStoryForm" action="submit">
-                <h3>Share Your Favorite Backcountry Ski Areas</h3>
-                <input type="text" id="trail" placeholder="Trail Name"><br><br>
-                <!-- <input type="text" id="state" placeholder="State"><br><br>
-                <input type="text" id="picture"placeholder="Picture URL"><br><br> -->
-                <button type="submit" id="postStory">Share Your Story</button>
+                <h3>Share Your Favorite Backcountry Ski Areas</h3><br>
+                <input type="text" id="trail" placeholder="Trail Name"><br>
+                <button class="normBtn" type="submit" id="postStory">Add Trail</button>
             </form>
+        </div><br>
+        <div class="trailList">
+            <ul id='trailList'></ul>
+            <!-- <aside id="message"></aside> -->
         </div>
-    </section>
-    <section id="trail">
-
     </section>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

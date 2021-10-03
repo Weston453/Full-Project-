@@ -17,9 +17,42 @@ radBtn.addEventListener('click', (event)=>{
 
 // Add Trail Card--------------------------------------------------------
 const addStoryForm = document.getElementById("addStoryForm")
-const trailName = document.getElementById("trail")
+let addTrailName = document.getElementById("trail")
 
-// createTrailCard = (trailsDb) =>{
-//     const trailCard = document.createElement("div")
-//     trailCard.innerHTML = `<img alt='`
-// }
+addStoryForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    // const {value} = addTrailName
+    
+    // axios.post('http://localhost:4000/api/trail/', value)
+    // .then(res => {
+        const trail = document.createElement('li')
+        const trailCont = document.createElement('span')
+        trailCont.textContent = addTrailName.value
+
+        trailCont.addEventListener('click', skiedTrail)
+        
+        trail.append(trailCont)
+        
+        const delBtn = document.createElement("button")
+        delBtn.textContent = "X"
+        delBtn.addEventListener('click', deleteTrail)
+        const list = document.getElementById("trailList")
+        trail.append(delBtn)
+        
+        list.append(trail)
+        addTrailName.value = ""
+        // console.log(res.data)
+    // })
+    // .catch(err => console.log(err))
+})
+
+const message = document.querySelector('#message')
+
+deleteTrail = (event) => {
+    event.target.parentNode.remove()
+    // message.textContent = "Trail Removed"
+}
+
+skiedTrail = (event) => {
+    event.target.classList.toggle("skied")
+}
