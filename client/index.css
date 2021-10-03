@@ -16,7 +16,6 @@ body{
 
 #header{
     background-color: #ffffff;
-    color: rgb(88, 88, 88);
     height: 75px;
     display: flex;
     justify-content: center;
@@ -31,6 +30,12 @@ h3{
 h1{
     font-size: 40px;
     font-weight: 500;
+}
+
+#title{
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+
 }
 
 nav{
