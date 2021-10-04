@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path');
 const express = require('express');
 const cors = require("cors");
@@ -5,7 +6,8 @@ const cors = require("cors");
 const app = express();
 
 const mtnCtrl = require('./controllers/mtnController')
-const trailCtrl = require('./controllers/trailController')
+const apiCtrl = require('./controllers/apiController')
+// const trailCtrl = require('./controllers/trailController')
 
 const axios = require('axios');
 
@@ -17,7 +19,10 @@ app.use(express.static("client"));
 app.get('/api/mountain/', mtnCtrl.getMountainFact)
 
 //trail Adder-------------------------------------
-app.post('/api/trail/', trailCtrl.addTrail)
+// app.post('/api/trail/', trailCtrl.addTrail)
+
+//Weather API--------------------------------------
+app.get('/api/weather/:city', apiCtrl.getSlcWeather)
 
 // app.get('/api/trails/', trailCtrl.getTrails)
 // app.post('/api/trails/', trailCtrl.createTrail)

@@ -1,4 +1,3 @@
-
 // Get random mountain facts---------------------------------------------
 const radBtn = document.getElementById("radBtn")
 const mountainContainer = document.getElementById("mountainContainer")
@@ -56,3 +55,20 @@ deleteTrail = (event) => {
 skiedTrail = (event) => {
     event.target.classList.toggle("skied")
 }
+
+
+
+// getWeather = (event) => {
+//     // event.preventDefault()
+//     axios.get('http://localhost:4000/api/weather/')
+//         .then(res => {
+//             const {
+//                 lon,
+//                 city_name,
+
+//             } = res.data
+//             console.log(res.data.city_)
+//         })
+//         .catch(err => console.log(err))
+// }
+// getWeather()

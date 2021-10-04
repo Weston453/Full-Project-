@@ -1,12 +1,12 @@
 // const trailsDb = require("./db.json")
 // let globalId = 2
 
-const trails = "hello"
+// const trails = "hello"
 
-module.exports = {
-    addTrail: (req, res) => {
-        res.status(200).send(trails)
-    }
+// module.exports = {
+//     addTrail: (req, res) => {
+//         res.status(200).send(trails)
+//     }
 
     // getTrails: (req, res) => {
     //     res.status(200).send(trailsDb)
@@ -28,4 +28,4 @@ module.exports = {
     //     }
     // }
 
-};
+// };
