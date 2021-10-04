@@ -213,3 +213,20 @@ button{
 .trailClass{
     padding: 20px;
 }
+
+#videoContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#videos{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 580px;
+}

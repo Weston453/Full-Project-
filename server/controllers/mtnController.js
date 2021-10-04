@@ -7,7 +7,7 @@ const mountain = ['In the late 80s Brett “Kowboy” Kobernick cut a snowboard 
 'Avalanches pose very real danger to all winter backcountry travelers. If you want to ski or snowboard in the backcountry, it’s crucial that you enroll in avalanche safety training taught by a qualified professional.']
 
 module.exports = {
-    getMountainFact: (req, res)=>{
+    getMountainFact: (req, res) => {
         const randomIndex = Math.floor(Math.random() *mountain.length)
         const randomMountain = mountain[randomIndex]
         res.status(200).send(randomMountain)
