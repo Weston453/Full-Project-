@@ -10,7 +10,6 @@ getWeather = (city) => {
                 wind_cdir_full,
                 vis
             } = res.data
-            console.log(res.data)
             cityContainer.innerHTML = ''
             const city = document.createElement('h3')
             city.setAttribute('id', 'topCityCard')
@@ -37,10 +36,9 @@ getWeather = (city) => {
         })
         .catch(err => console.log(err))
 }
-// getWeather('salt+lake+city')
+getWeather('salt+lake+city')
 
 const locationBtns = document.querySelectorAll(".location-btn")
-
 
 for(let i = 0; i < locationBtns.length; i++){
     locationBtns[i].addEventListener('click', (e) => {

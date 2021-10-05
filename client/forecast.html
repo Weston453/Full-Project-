@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css"/>
-    <title>On the Snow</title>
+    <title>SkiPak | Forecast</title>
 </head>
 <body>
     <Section id="header">
-        <h1><a id="title" href="./index.html">Community on the Snow</a></h1>
+        <h1><a id="title" href="./index.html">SkiPak</a></h1>
     </Section> 
     <nav>
         <ul>
@@ -24,25 +25,23 @@
         <div class="card">
         <h3>Utah Avalanche Center</h3><br>
         <p id="forecastP">Get today's avalanche forecast provided by the Utah Avalanche Center to know the conditions you are heading into. Stay informed and staff safe on your adventure!</p><br>
-        <button class="normBtn"><a id="forecast" href="https://utahavalanchecenter.org/forecast/salt-lake" target="_blank">Get Forecast</a></button>
+        <a id="forecast" href="https://utahavalanchecenter.org/forecast/salt-lake" target="_blank"><button class="hvr-sweep-to-right">Get Forecast</button></a>
         </div>
     </section>
     <section class="container">
         <div class="card">
             <h3>Get Today's Weather Forecast for Your Area</h3><br>
             <div id="cityBtnContainer">
-                <button class="normBtn location-btn" value="salt+lake+city" id="slc">Salt Lake City</button>
-                <button class="normBtn location-btn" value="denver" id="denver">Denver</button>
-                <button class="normBtn location-btn" value="jackson" id="jackson">Jackson</button>
-                <button class="normBtn location-btn" value="tahoe+city" id="taheo">Tahoe</button>
-                <button class="normBtn location-btn" value="bend" id="bend">Bend</button>
-                <button class="normBtn location-btn" value="whistler" id="whistler">Whistler Blackcomb</button>
+                <button class="hvr-sweep-to-right location-btn" value="salt+lake+city" id="slc">Salt Lake City</button>
+                <button class="hvr-sweep-to-right location-btn" value="denver" id="denver">Denver</button>
+                <button class="hvr-sweep-to-right location-btn" value="jackson" id="jackson">Jackson</button>
+                <button class="hvr-sweep-to-right location-btn" value="tahoe+city" id="taheo">Tahoe</button>
+                <button class="hvr-sweep-to-right location-btn" value="bend" id="bend">Bend</button>
+                <button class="hvr-sweep-to-right location-btn" value="whistler" id="whistler">Whistler Blackcomb</button>
             </div>
         </div>
-        <div class="card" id="cityContainer">
-        </div>
+        <div class="card" id="cityContainer"></div>
     </section>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./forecast.js"></script>
 </body>

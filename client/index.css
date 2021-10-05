@@ -1,21 +1,21 @@
 *{
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 200;
 }
 
 body{
     background-image: url("alexander-savonin-JT-ADySithU-unsplash (1).jpg");
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     padding: 0;
 }
 
 #header{
     background-color: #ffffff;
-    height: 75px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,21 +27,21 @@ h3{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 500;
 }
 
 #title{
+    font-family: 'Courgette', cursive;
     text-decoration: none;
     color: rgb(88, 88, 88);
-
 }
 
 nav{
     background-color:rgba(48, 47, 47, 0.801);
     justify-content: space-evenly;
     display: flex;
-    height:50px;
+    height: 50px;
 }
 
 .link {
@@ -65,7 +65,7 @@ nav ul {
 
 #nav-links:hover{
     text-decoration: none;
-    color: rgb(100, 173, 185);  
+    color: #b3e1f7;  
     text-transform: uppercase;
 }
 
@@ -85,13 +85,8 @@ nav ul {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: rgb(100, 173, 185);
+    background-color: #b3e1f7;
     position: absolute;
-}
-
-#forecast{
-    color:black;
-    text-decoration: none;
 }
 
 .container{
@@ -107,9 +102,9 @@ nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:aliceblue;
-    padding:20px;
-    border-radius:10px;
+    background-color:rgb(240, 248, 255);
+    padding: 20px;
+    border-radius: 10px;
     margin: 10px;
 }
 
@@ -139,22 +134,13 @@ nav ul {
     text-align: center;
 }
 
-.normBtn{
-    height: 40px;
-    width: 170px;
-    border-radius: 10px;
-    font-size: 15px;
-    color: black;
-}
-
-.normBtn:hover{
-    height: 45px;
-    width: 175px;
-    font-weight: bold;
-}
-
 .location-btn{
     margin-bottom: 20px;
+}
+
+#forecast{
+    color:black;
+    text-decoration: none;
 }
 
 #submit{
@@ -196,10 +182,9 @@ li{
 .trailList{
     background-color: aliceblue;
     width: 500px;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    /* padding: 10px; */
 }
 
 #trail{
@@ -241,7 +226,6 @@ button{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /* background-color: aliceblue; */
     border-radius: 10px;
     width: 580px;
     margin-bottom: 60px;
@@ -282,3 +266,48 @@ button{
 p{
     text-align: center;
 }
+
+.hvr-sweep-to-right {
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    height: 40px;
+    width: 170px;
+    font-size: 15px;
+    color: black;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #b3e1f7;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+  }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
