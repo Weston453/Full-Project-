@@ -102,7 +102,7 @@ nav ul {
     flex-direction: column;
 }
 
-#card{
+.card{
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -111,6 +111,18 @@ nav ul {
     background-color:aliceblue;
     padding:20px;
     border-radius:10px;
+    margin: 10px;
+}
+
+#cityContainer{
+    padding: 0;
+    width: 250px;
+}
+
+#cityBtnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #addStoryForm{
@@ -139,7 +151,6 @@ nav ul {
 .normBtn:hover{
     height: 45px;
     width: 175px;
-    /* color: grey; */
     font-weight: bold;
 }
 
@@ -229,4 +240,21 @@ button{
     background-color: aliceblue;
     border-radius: 10px;
     width: 580px;
+}
+
+#trailElem{
+    font-weight: bold;
+    margin: 10px;
+}
+
+#trailLi{
+    margin: 10px;
+}
+
+#btmCityCard{
+    margin-bottom: 10px;
+}
+
+#topCityCard{
+    margin: 10px;
 }

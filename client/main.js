@@ -25,9 +25,11 @@ addStoryForm.addEventListener('submit', (event) => {
     // axios.post('http://localhost:4000/api/trail/', value)
     // .then(res => {
         const trail = document.createElement('li')
+        trail.setAttribute('id', 'trailLi')
         const trailCont = document.createElement('span')
+        trailCont.setAttribute('id','trailElem')
         trailCont.textContent = addTrailName.value
-
+        
         trailCont.addEventListener('click', skiedTrail)
         
         trail.append(trailCont)
@@ -55,20 +57,3 @@ deleteTrail = (event) => {
 skiedTrail = (event) => {
     event.target.classList.toggle("skied")
 }
-
-
-
-// getWeather = (event) => {
-//     // event.preventDefault()
-//     axios.get('http://localhost:4000/api/weather/')
-//         .then(res => {
-//             const {
-//                 lon,
-//                 city_name,
-
-//             } = res.data
-//             console.log(res.data.city_)
-//         })
-//         .catch(err => console.log(err))
-// }
-// getWeather()
